@@ -126,16 +126,16 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName("verticalLayout")
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setMinimumSize(QtCore.QSize(120, 50))
-        self.pushButton.setMaximumSize(QtCore.QSize(200, 16777215))
+        self.loginButton = QtWidgets.QPushButton(self.centralwidget)
+        self.loginButton.setMinimumSize(QtCore.QSize(120, 50))
+        self.loginButton.setMaximumSize(QtCore.QSize(200, 16777215))
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
         font.setPointSize(18)
         font.setBold(True)
         font.setWeight(75)
-        self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("QPushButton{\n"
+        self.loginButton.setFont(font)
+        self.loginButton.setStyleSheet("QPushButton{\n"
 "    background-color: rgb(44, 89, 209);\n"
 "    font: 75 18pt \"Segoe UI\";\n"
 "    font-weight: bold;\n"
@@ -153,8 +153,8 @@ class Ui_MainWindow(object):
 "    border: 2px solid;\n"
 "    border-color: rgb(13, 17, 23);\n"
 "}")
-        self.pushButton.setObjectName("pushButton")
-        self.horizontalLayout_4.addWidget(self.pushButton)
+        self.loginButton.setObjectName("pushButton")
+        self.horizontalLayout_4.addWidget(self.loginButton)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
         self.forgotPassword = QtWidgets.QLabel(self.centralwidget)
         font = QtGui.QFont()
@@ -197,5 +197,5 @@ class Ui_MainWindow(object):
 "Hoş Geldiniz"))
         self.label.setText(_translate("MainWindow", "TC Kimlik No:"))
         self.label_2.setText(_translate("MainWindow", "Şifre:"))
-        self.pushButton.setText(_translate("MainWindow", "Giriş Yap"))
+        self.loginButton.setText(_translate("MainWindow", "Giriş Yap"))
         self.forgotPassword.setText(_translate("MainWindow", "Şifremi Unuttum"))
