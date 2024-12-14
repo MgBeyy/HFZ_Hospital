@@ -24,24 +24,31 @@ class Ui_MainWindow(object):
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidget.setMaximumSize(QtCore.QSize(1500, 1000))
-        self.tableWidget.setStyleSheet("QTableWidget{\n"
-"    font: 12pt \"Segoe UI\";\n"
-"    color: rgb(198, 205, 213);\n"
-"    background-color: rgb(183, 230, 255);\n"
-"    border-radius: 15px;\n"
-"    selection-background-color: rgb(198, 205, 213);\n"
-"    selection-color: rgb(22, 27, 34);\n"
-"}\n"
-"QHeaderView, QHeaderView::section {\n"
-"    background-color: rgb(44, 89, 209);\n"
-"    font: 12pt \"Segoe UI\";\n"
-"    color: rgb(198, 205, 213);\n"
-"}\n"
-"QTableView QTableCornerButton::section{\n"
-"    border: 1px solid;\n"
-"    border-color: rgba(33, 38, 45, 255);\n"
-"    background-color: rgb(44, 89, 209);\n"
-"}")
+        self.tableWidget.setStyleSheet("""QTableWidget {
+        background-color: rgb(255, 255, 255);
+        font: 12pt "Segoe UI";
+        border: none;
+        gridline-color: rgb(224, 224, 224);
+}
+    
+QTableWidget::item {
+        padding: 10px;
+        background-color: transparent;
+        border: none;
+}
+
+QTableWidget::item:selected {
+        background-color: rgb(183, 230, 255);
+        color: black;
+}
+    
+QHeaderView::section {
+        background-color: rgb(255, 255, 255, 0);
+        padding: 5px;
+        font: 12pt "Segoe UI";
+        border: none;
+		 border-bottom: 2px solid rgb(44, 89, 209);
+    }""")
         self.tableWidget.setObjectName("tableWidget")
         self.tableWidget.setColumnCount(3)
         self.tableWidget.setRowCount(1)
