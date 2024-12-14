@@ -34,6 +34,7 @@ class Ui_MainWindow(object):
 "}\n"
 "QHeaderView, QHeaderView::section {\n"
 "    background-color: rgb(44, 89, 209);\n"
+"    font: 12pt \"Segoe UI\";\n"
 "    color: rgb(198, 205, 213);\n"
 "}\n"
 "QTableView QTableCornerButton::section{\n"

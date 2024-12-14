@@ -140,26 +140,19 @@ class Ui_MainWindow(object):
         self.verticalLayout.addLayout(self.horizontalLayout_3)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.forgotPassword = QtWidgets.QLabel(self.centralwidget)
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(10)
-        self.forgotPassword.setFont(font)
-        self.forgotPassword.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.forgotPassword.setAutoFillBackground(False)
-        self.forgotPassword.setStyleSheet("QLabel{\n"
+        self.logInButton = QtWidgets.QPushButton(self.centralwidget)
+        self.logInButton.setStyleSheet("QPushButton{\n"
 "    background-color: rgba(255, 255, 255, 0);\n"
 "    color: rgb(106, 146, 255);\n"
 "    font: 10pt \"Segoe UI\";\n"
 "}\n"
-"QLabel::hover{\n"
+"QPushButton::hover{\n"
 "    background-color: rgba(255, 255, 255, 0);\n"
 "    color: rgb(44, 89, 209);\n"
 "    font: 10pt \"Segoe UI\";\n"
 "}")
-        self.forgotPassword.setAlignment(QtCore.Qt.AlignCenter)
-        self.forgotPassword.setObjectName("forgotPassword")
-        self.horizontalLayout_4.addWidget(self.forgotPassword)
+        self.logInButton.setObjectName("logInButton")
+        self.horizontalLayout_4.addWidget(self.logInButton)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
         self.gridLayout.addLayout(self.verticalLayout, 8, 1, 1, 1)
         spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Minimum)
@@ -245,7 +238,7 @@ class Ui_MainWindow(object):
         self.label_2.setText(_translate("MainWindow", "TC Kimlik No:"))
         self.label.setText(_translate("MainWindow", "E-Posta:"))
         self.getPass.setText(_translate("MainWindow", "Şifre Al"))
-        self.forgotPassword.setText(_translate("MainWindow", "Giriş Yap"))
+        self.logInButton.setText(_translate("MainWindow", "Giriş Yap"))
         self.label_4.setText(_translate("MainWindow", "HFZ Hastanesi\n"
 "Bilgi Yönetim Sistemi"))
         self.label_3.setText(_translate("MainWindow", "Telefon:"))

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'mainPatient.ui'
+# Form implementation generated from reading ui file 'mainAsistant.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -197,64 +197,6 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addLayout(self.verticalLayout_2)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")
-        self.appointmentButton = QtWidgets.QPushButton(self.centralwidget)
-        self.appointmentButton.setMinimumSize(QtCore.QSize(0, 40))
-        self.appointmentButton.setStyleSheet("QPushButton{\n"
-"    background-color: rgb(44, 89, 209);\n"
-"    font: 75 16pt \"Segoe UI\";\n"
-"    font-weight: bold;\n"
-"    color: rgb(198, 205, 213);\n"
-"    border-radius: 15px;\n"
-"}\n"
-"QPushButton::hover{\n"
-"    background-color: rgb(198, 205, 213);\n"
-"    color: rgb(44, 89, 209);\n"
-"}\n"
-"QPushButton::pressed{\n"
-"    background-color: rgb(198, 205, 213);\n"
-"    color: rgb(44, 89, 209);\n"
-"    padding-top: 3px;\n"
-"    border: 2px solid;\n"
-"    border-color: rgb(13, 17, 23);\n"
-"}")
-        self.appointmentButton.setObjectName("appointmentButton")
-        self.verticalLayout.addWidget(self.appointmentButton)
-        spacerItem2 = QtWidgets.QSpacerItem(5, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout.addItem(spacerItem2)
-        self.prescriptionButton = QtWidgets.QPushButton(self.centralwidget)
-        self.prescriptionButton.setMinimumSize(QtCore.QSize(0, 40))
-        self.prescriptionButton.setStyleSheet("QPushButton{\n"
-"    background-color: rgb(44, 89, 209);\n"
-"    font: 75 16pt \"Segoe UI\";\n"
-"    font-weight: bold;\n"
-"    color: rgb(198, 205, 213);\n"
-"    border-radius: 15px;\n"
-"}\n"
-"QPushButton::hover{\n"
-"    background-color: rgb(198, 205, 213);\n"
-"    color: rgb(44, 89, 209);\n"
-"}\n"
-"QPushButton::pressed{\n"
-"    background-color: rgb(198, 205, 213);\n"
-"    color: rgb(44, 89, 209);\n"
-"    padding-top: 3px;\n"
-"    border: 2px solid;\n"
-"    border-color: rgb(13, 17, 23);\n"
-"}")
-        self.prescriptionButton.setObjectName("prescriptionButton")
-        self.verticalLayout.addWidget(self.prescriptionButton)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.verticalLayout.addItem(spacerItem3)
-        self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(14)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_2.setFont(font)
-        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout.addWidget(self.label_2)
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setMaximumSize(QtCore.QSize(120, 30))
         font = QtGui.QFont()
@@ -265,9 +207,9 @@ class Ui_MainWindow(object):
         self.label.setFont(font)
         self.label.setObjectName("label")
         self.verticalLayout.addWidget(self.label)
-        self.departmantComboBox = QtWidgets.QComboBox(self.centralwidget)
-        self.departmantComboBox.setMaximumSize(QtCore.QSize(170, 16777215))
-        self.departmantComboBox.setStyleSheet("QComboBox {\n"
+        self.tableComboBox = QtWidgets.QComboBox(self.centralwidget)
+        self.tableComboBox.setMaximumSize(QtCore.QSize(170, 16777215))
+        self.tableComboBox.setStyleSheet("QComboBox {\n"
 "    font: 12pt \"Segoe UI\";\n"
 "    border: 2px solid;\n"
 "    border-color: rgb(96, 205, 255);\n"
@@ -332,13 +274,15 @@ class Ui_MainWindow(object):
 "    border: 3px solid;\n"
 "    border-color: rgb(44, 89, 209);\n"
 "}")
-        self.departmantComboBox.setObjectName("departmantComboBox")
-        self.departmantComboBox.addItem("")
-        self.departmantComboBox.addItem("")
-        self.verticalLayout.addWidget(self.departmantComboBox)
-        self.getAppointmentButton = QtWidgets.QPushButton(self.centralwidget)
-        self.getAppointmentButton.setMinimumSize(QtCore.QSize(0, 40))
-        self.getAppointmentButton.setStyleSheet("QPushButton{\n"
+        self.tableComboBox.setObjectName("tableComboBox")
+        self.tableComboBox.addItem("")
+        self.tableComboBox.addItem("")
+        self.verticalLayout.addWidget(self.tableComboBox)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.verticalLayout.addItem(spacerItem2)
+        self.prescriptionButton = QtWidgets.QPushButton(self.centralwidget)
+        self.prescriptionButton.setMinimumSize(QtCore.QSize(0, 40))
+        self.prescriptionButton.setStyleSheet("QPushButton{\n"
 "    background-color: rgb(44, 89, 209);\n"
 "    font: 75 16pt \"Segoe UI\";\n"
 "    font-weight: bold;\n"
@@ -356,8 +300,33 @@ class Ui_MainWindow(object):
 "    border: 2px solid;\n"
 "    border-color: rgb(13, 17, 23);\n"
 "}")
-        self.getAppointmentButton.setObjectName("getAppointmentButton")
-        self.verticalLayout.addWidget(self.getAppointmentButton)
+        self.prescriptionButton.setObjectName("prescriptionButton")
+        self.verticalLayout.addWidget(self.prescriptionButton)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 10, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.verticalLayout.addItem(spacerItem3)
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setMinimumSize(QtCore.QSize(0, 40))
+        self.pushButton.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(44, 89, 209);\n"
+"    font: 75 16pt \"Segoe UI\";\n"
+"    font-weight: bold;\n"
+"    color: rgb(198, 205, 213);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"QPushButton::hover{\n"
+"    background-color: rgb(198, 205, 213);\n"
+"    color: rgb(44, 89, 209);\n"
+"}\n"
+"QPushButton::pressed{\n"
+"    background-color: rgb(198, 205, 213);\n"
+"    color: rgb(44, 89, 209);\n"
+"    padding-top: 3px;\n"
+"    border: 2px solid;\n"
+"    border-color: rgb(13, 17, 23);\n"
+"}\n"
+"")
+        self.pushButton.setObjectName("pushButton")
+        self.verticalLayout.addWidget(self.pushButton)
         spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout.addItem(spacerItem4)
         self.logOutButton = QtWidgets.QPushButton(self.centralwidget)
@@ -399,16 +368,13 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "New Column"))
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "New Column"))
-        self.searchComboBox.setCurrentText(_translate("MainWindow", "New Item"))
         self.searchComboBox.setItemText(0, _translate("MainWindow", "New Item"))
         self.searchComboBox.setItemText(1, _translate("MainWindow", "New Item"))
         self.searchLineEdit.setPlaceholderText(_translate("MainWindow", "Ara"))
         self.searchButton.setText(_translate("MainWindow", "ARA"))
-        self.appointmentButton.setText(_translate("MainWindow", "Randevularım"))
-        self.prescriptionButton.setText(_translate("MainWindow", "Reçetelerim"))
-        self.label_2.setText(_translate("MainWindow", "Randevu Alma"))
-        self.label.setText(_translate("MainWindow", "Bölüm Seç:"))
-        self.departmantComboBox.setItemText(0, _translate("MainWindow", "New Item"))
-        self.departmantComboBox.setItemText(1, _translate("MainWindow", "New Item"))
-        self.getAppointmentButton.setText(_translate("MainWindow", "Randevu Al"))
+        self.label.setText(_translate("MainWindow", "Tablo Seç:"))
+        self.tableComboBox.setItemText(0, _translate("MainWindow", "New Item"))
+        self.tableComboBox.setItemText(1, _translate("MainWindow", "New Item"))
+        self.prescriptionButton.setText(_translate("MainWindow", "Randevu Oluştur"))
+        self.pushButton.setText(_translate("MainWindow", "Hasta Ekle"))
         self.logOutButton.setText(_translate("MainWindow", "Çıkış"))

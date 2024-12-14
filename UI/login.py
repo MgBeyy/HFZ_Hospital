@@ -20,6 +20,8 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
+        spacerItem = QtWidgets.QSpacerItem(20, 178, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.gridLayout.addItem(spacerItem, 8, 2, 1, 1)
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
@@ -30,12 +32,10 @@ class Ui_MainWindow(object):
         self.label_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_3.setObjectName("label_3")
         self.gridLayout.addWidget(self.label_3, 2, 2, 1, 1)
-        spacerItem = QtWidgets.QSpacerItem(20, 150, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
-        self.gridLayout.addItem(spacerItem, 1, 2, 1, 1)
         spacerItem1 = QtWidgets.QSpacerItem(300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout.addItem(spacerItem1, 4, 0, 1, 2)
-        spacerItem2 = QtWidgets.QSpacerItem(20, 178, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
-        self.gridLayout.addItem(spacerItem2, 7, 2, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(20, 150, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        self.gridLayout.addItem(spacerItem2, 1, 2, 1, 1)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         spacerItem3 = QtWidgets.QSpacerItem(30, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -78,10 +78,66 @@ class Ui_MainWindow(object):
         spacerItem5 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem5)
         self.gridLayout.addLayout(self.horizontalLayout_2, 3, 2, 1, 1)
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setContentsMargins(0, -1, -1, -1)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.loginButton = QtWidgets.QPushButton(self.centralwidget)
+        self.loginButton.setMinimumSize(QtCore.QSize(120, 50))
+        self.loginButton.setMaximumSize(QtCore.QSize(200, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(18)
+        font.setBold(True)
+        font.setWeight(75)
+        self.loginButton.setFont(font)
+        self.loginButton.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(44, 89, 209);\n"
+"    font: 75 18pt \"Segoe UI\";\n"
+"    font-weight: bold;\n"
+"    color: rgb(198, 205, 213);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"QPushButton::hover{\n"
+"    background-color: rgb(198, 205, 213);\n"
+"    color: rgb(44, 89, 209);\n"
+"}\n"
+"QPushButton::pressed{\n"
+"    background-color: rgb(198, 205, 213);\n"
+"    color: rgb(44, 89, 209);\n"
+"    padding-top: 3px;\n"
+"    border: 2px solid;\n"
+"    border-color: rgb(13, 17, 23);\n"
+"}")
+        self.loginButton.setObjectName("loginButton")
+        self.horizontalLayout_4.addWidget(self.loginButton)
+        self.verticalLayout.addLayout(self.horizontalLayout_4)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.forgotPassButton = QtWidgets.QPushButton(self.centralwidget)
+        self.forgotPassButton.setStyleSheet("QPushButton{\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
+"    color: rgb(106, 146, 255);\n"
+"    font: 10pt \"Segoe UI\";\n"
+"}\n"
+"QPushButton::hover{\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
+"    color: rgb(44, 89, 209);\n"
+"    font: 10pt \"Segoe UI\";\n"
+"}")
+        self.forgotPassButton.setObjectName("forgotPassButton")
+        self.horizontalLayout_3.addWidget(self.forgotPassButton)
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
+        spacerItem6 = QtWidgets.QSpacerItem(20, 60, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem6)
+        self.gridLayout.addLayout(self.verticalLayout, 6, 2, 1, 1)
+        spacerItem7 = QtWidgets.QSpacerItem(300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem7, 4, 3, 1, 1)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
-        spacerItem6 = QtWidgets.QSpacerItem(30, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem6)
+        spacerItem8 = QtWidgets.QSpacerItem(30, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem8)
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setMinimumSize(QtCore.QSize(100, 0))
         self.label_2.setMaximumSize(QtCore.QSize(150, 16777215))
@@ -116,74 +172,34 @@ class Ui_MainWindow(object):
         self.passwordLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
         self.passwordLineEdit.setObjectName("passwordLineEdit")
         self.horizontalLayout.addWidget(self.passwordLineEdit)
-        spacerItem7 = QtWidgets.QSpacerItem(50, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem7)
-        spacerItem8 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem8)
+        spacerItem9 = QtWidgets.QSpacerItem(50, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem9)
+        spacerItem10 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem10)
         self.gridLayout.addLayout(self.horizontalLayout, 4, 2, 1, 1)
-        self.verticalLayout = QtWidgets.QVBoxLayout()
-        self.verticalLayout.setContentsMargins(0, -1, -1, -1)
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
-        self.loginButton = QtWidgets.QPushButton(self.centralwidget)
-        self.loginButton.setMinimumSize(QtCore.QSize(120, 50))
-        self.loginButton.setMaximumSize(QtCore.QSize(200, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(18)
-        font.setBold(True)
-        font.setWeight(75)
-        self.loginButton.setFont(font)
-        self.loginButton.setStyleSheet("QPushButton{\n"
-"    background-color: rgb(44, 89, 209);\n"
-"    font: 75 18pt \"Segoe UI\";\n"
-"    font-weight: bold;\n"
-"    color: rgb(198, 205, 213);\n"
-"    border-radius: 15px;\n"
-"}\n"
-"QPushButton::hover{\n"
-"    background-color: rgb(198, 205, 213);\n"
-"    color: rgb(44, 89, 209);\n"
-"}\n"
-"QPushButton::pressed{\n"
-"    background-color: rgb(198, 205, 213);\n"
-"    color: rgb(44, 89, 209);\n"
-"    padding-top: 3px;\n"
-"    border: 2px solid;\n"
-"    border-color: rgb(13, 17, 23);\n"
+        self.labelInfo = QtWidgets.QLabel(self.centralwidget)
+        self.labelInfo.setStyleSheet("QLabel{\n"
+"    background-color: rgba(255, 255, 255, 0);\n"
+"    color: rgb(255, 0, 0);\n"
+"    font: 12pt \"Segoe UI\";\n"
 "}")
-        self.loginButton.setObjectName("pushButton")
-        self.horizontalLayout_4.addWidget(self.loginButton)
-        self.verticalLayout.addLayout(self.horizontalLayout_4)
-        self.forgotPassword = QtWidgets.QLabel(self.centralwidget)
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(10)
-        self.forgotPassword.setFont(font)
-        self.forgotPassword.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.forgotPassword.setAutoFillBackground(False)
-        self.forgotPassword.setStyleSheet("QLabel{\n"
+        self.labelInfo.setText("")
+        self.labelInfo.setAlignment(QtCore.Qt.AlignCenter)
+        self.labelInfo.setObjectName("labelInfo")
+        self.gridLayout.addWidget(self.labelInfo, 5, 2, 1, 1)
+        self.createAccountButton = QtWidgets.QPushButton(self.centralwidget)
+        self.createAccountButton.setStyleSheet("QPushButton{\n"
 "    background-color: rgba(255, 255, 255, 0);\n"
 "    color: rgb(106, 146, 255);\n"
 "    font: 10pt \"Segoe UI\";\n"
 "}\n"
-"QLabel::hover{\n"
+"QPushButton::hover{\n"
 "    background-color: rgba(255, 255, 255, 0);\n"
 "    color: rgb(44, 89, 209);\n"
 "    font: 10pt \"Segoe UI\";\n"
 "}")
-        self.forgotPassword.setAlignment(QtCore.Qt.AlignCenter)
-        self.forgotPassword.setObjectName("forgotPassword")
-        self.verticalLayout.addWidget(self.forgotPassword)
-        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
-        self.verticalLayout.addLayout(self.horizontalLayout_3)
-        spacerItem9 = QtWidgets.QSpacerItem(20, 60, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem9)
-        self.gridLayout.addLayout(self.verticalLayout, 5, 2, 1, 1)
-        spacerItem10 = QtWidgets.QSpacerItem(300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem10, 4, 3, 1, 1)
+        self.createAccountButton.setObjectName("createAccountButton")
+        self.gridLayout.addWidget(self.createAccountButton, 9, 2, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -196,6 +212,7 @@ class Ui_MainWindow(object):
 "Bilgi Yönetim Sistemi\n"
 "Hoş Geldiniz"))
         self.label.setText(_translate("MainWindow", "TC Kimlik No:"))
-        self.label_2.setText(_translate("MainWindow", "Şifre:"))
         self.loginButton.setText(_translate("MainWindow", "Giriş Yap"))
-        self.forgotPassword.setText(_translate("MainWindow", "Şifremi Unuttum"))
+        self.forgotPassButton.setText(_translate("MainWindow", "Şifremi Unuttum"))
+        self.label_2.setText(_translate("MainWindow", "Şifre:"))
+        self.createAccountButton.setText(_translate("MainWindow", "Hesap Oluştur"))
