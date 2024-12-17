@@ -14,27 +14,19 @@ class loginUi(QMainWindow):
         self.loginUi.loginButton.clicked.connect(self.login)
         self.loginUi.forgotPassButton.clicked.connect(self.forgotPass)
 
-    def clear(self):
-        self.loginUi.tcNoLineEdit.clear()
-        self.loginUi.passwordLineEdit.clear()
-        self.loginUi.labelInfo.setText("")
-
     def login(self):
         if self.loginUi.tcNoLineEdit.text() == 'd':
-            self.clear()
-            self.hide()
+            self.close()
             self.doctorUi = doctorController.DoctorUi()
             self.doctorUi.show()
 
         elif self.loginUi.tcNoLineEdit.text() == 'p':
-            self.clear()
-            self.hide()
+            self.close()
             self.patientUi = patientController.PatientUi()
             self.patientUi.show()
 
         elif self.loginUi.tcNoLineEdit.text() == 'a':
-            self.clear()
-            self.hide()
+            self.close()
             self.asistantUi = asisstantController.AsistantUi()
             self.asistantUi.show()
 
@@ -43,7 +35,6 @@ class loginUi(QMainWindow):
             print("Hatalı Giriş.")
 
     def forgotPass(self):
-        self.clear()
-        self.hide()
+        self.close()
         self.forgotUi = forgotPassController.ForgotPassUi()
         self.forgotUi.show()

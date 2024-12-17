@@ -10,16 +10,11 @@ class ForgotPassUi(QMainWindow):
 
         self.forgotUi = fp.Ui_MainWindow()
         self.forgotUi.setupUi(self)
+        self.setWindowTitle("HFZ Hastanesi")
 
         self.forgotUi.logInButton.clicked.connect(self.logIn)
 
-    def clear(self):
-        self.forgotUi.forgotPassTC.clear()
-        self.forgotUi.forgotPassPhone.clear()
-        self.forgotUi.forgotPassEPosta.clear()
-
     def logIn(self):
-        self.clear()
-        self.hide()
+        self.close()
         self.logInUi = loginController.loginUi()
         self.logInUi.show()

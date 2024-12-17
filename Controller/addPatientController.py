@@ -8,5 +8,5 @@ class addPatientUi(QMainWindow):
         super().__init__()
 
         self.apUi = addPatient.Ui_MainWindow()
-        self.setWindowTitle("HFZ Hastanesi")
         self.apUi.setupUi(self)
+        self.setWindowTitle("HFZ Hastanesi")

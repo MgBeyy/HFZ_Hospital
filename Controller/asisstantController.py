@@ -18,7 +18,7 @@ class AsistantUi(QMainWindow):
     def logOut(self):
         # Yapılan değişiklikleri sil
         self.login = loginController.loginUi()
-        self.hide()
+        self.close()
         self.login.show()
 
     def prescription(self):
