@@ -10,44 +10,6 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout = QtWidgets.QGridLayout(self.centralwidget)
         self.gridLayout.setObjectName("gridLayout")
-        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
-        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_17.addItem(spacerItem)
-        self.label_17 = QtWidgets.QLabel(self.centralwidget)
-        self.label_17.setMinimumSize(QtCore.QSize(100, 0))
-        self.label_17.setMaximumSize(QtCore.QSize(150, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("Segoe UI")
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_17.setFont(font)
-        self.label_17.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_17.setObjectName("label_17")
-        self.horizontalLayout_17.addWidget(self.label_17)
-        self.numberLineEdit = QtWidgets.QLineEdit(self.centralwidget)
-        self.numberLineEdit.setMinimumSize(QtCore.QSize(300, 40))
-        self.numberLineEdit.setMaximumSize(QtCore.QSize(300, 40))
-        self.numberLineEdit.setStyleSheet("QLineEdit{\n"
-"    background-color: rgb(255, 255, 255);\n"
-"    border-radius: 15px;\n"
-"    border: 3px solid;\n"
-"    border-color: rgb(121, 177, 236);\n"
-"    font: 14pt \"Segoe UI\";\n"
-"}\n"
-"QLineEdit::focus{\n"
-"    border: 2px solid;\n"
-"    border-color: rgb(44, 89, 209);\n"
-"}\n"
-"")
-        self.numberLineEdit.setObjectName("numberLineEdit")
-        self.horizontalLayout_17.addWidget(self.numberLineEdit)
-        spacerItem1 = QtWidgets.QSpacerItem(50, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_17.addItem(spacerItem1)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout_17.addItem(spacerItem2)
-        self.gridLayout.addLayout(self.horizontalLayout_17, 6, 2, 1, 1)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setContentsMargins(0, -1, -1, -1)
         self.verticalLayout.setObjectName("verticalLayout")
@@ -83,13 +45,13 @@ class Ui_MainWindow(object):
         self.createAccountButton_2.setObjectName("createAccountButton_2")
         self.horizontalLayout_4.addWidget(self.createAccountButton_2)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 60, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
-        self.verticalLayout.addItem(spacerItem3)
+        spacerItem = QtWidgets.QSpacerItem(20, 60, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem)
         self.gridLayout.addLayout(self.verticalLayout, 11, 2, 1, 1)
         self.horizontalLayout = QtWidgets.QHBoxLayout()
         self.horizontalLayout.setObjectName("horizontalLayout")
-        spacerItem4 = QtWidgets.QSpacerItem(30, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem4)
+        spacerItem1 = QtWidgets.QSpacerItem(30, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem1)
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setMinimumSize(QtCore.QSize(100, 0))
         self.label_2.setMaximumSize(QtCore.QSize(150, 16777215))
@@ -124,11 +86,49 @@ class Ui_MainWindow(object):
         self.passwordLineEdit.setEchoMode(QtWidgets.QLineEdit.Password)
         self.passwordLineEdit.setObjectName("passwordLineEdit")
         self.horizontalLayout.addWidget(self.passwordLineEdit)
-        spacerItem5 = QtWidgets.QSpacerItem(50, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem5)
-        spacerItem6 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem6)
+        spacerItem2 = QtWidgets.QSpacerItem(50, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem2)
+        spacerItem3 = QtWidgets.QSpacerItem(100, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem3)
         self.gridLayout.addLayout(self.horizontalLayout, 9, 2, 1, 1)
+        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_17.addItem(spacerItem4)
+        self.label_17 = QtWidgets.QLabel(self.centralwidget)
+        self.label_17.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_17.setMaximumSize(QtCore.QSize(150, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("Segoe UI")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_17.setFont(font)
+        self.label_17.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_17.setObjectName("label_17")
+        self.horizontalLayout_17.addWidget(self.label_17)
+        self.numberLineEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.numberLineEdit.setMinimumSize(QtCore.QSize(300, 40))
+        self.numberLineEdit.setMaximumSize(QtCore.QSize(300, 40))
+        self.numberLineEdit.setStyleSheet("QLineEdit{\n"
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 15px;\n"
+"    border: 3px solid;\n"
+"    border-color: rgb(121, 177, 236);\n"
+"    font: 14pt \"Segoe UI\";\n"
+"}\n"
+"QLineEdit::focus{\n"
+"    border: 2px solid;\n"
+"    border-color: rgb(44, 89, 209);\n"
+"}\n"
+"")
+        self.numberLineEdit.setObjectName("numberLineEdit")
+        self.horizontalLayout_17.addWidget(self.numberLineEdit)
+        spacerItem5 = QtWidgets.QSpacerItem(50, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_17.addItem(spacerItem5)
+        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_17.addItem(spacerItem6)
+        self.gridLayout.addLayout(self.horizontalLayout_17, 6, 2, 1, 1)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         spacerItem7 = QtWidgets.QSpacerItem(30, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -247,21 +247,10 @@ class Ui_MainWindow(object):
         spacerItem15 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_19.addItem(spacerItem15)
         self.gridLayout.addLayout(self.horizontalLayout_19, 8, 2, 1, 1)
-        self.logInButton = QtWidgets.QPushButton(self.centralwidget)
-        self.logInButton.setStyleSheet("QPushButton{\n"
-"    background-color: rgba(255, 255, 255, 0);\n"
-"    color: rgb(106, 146, 255);\n"
-"    font: 10pt \"Segoe UI\";\n"
-"}\n"
-"QPushButton::hover{\n"
-"    background-color: rgba(255, 255, 255, 0);\n"
-"    color: rgb(44, 89, 209);\n"
-"    font: 10pt \"Segoe UI\";\n"
-"}")
-        self.logInButton.setObjectName("logInButton")
-        self.gridLayout.addWidget(self.logInButton, 15, 2, 1, 1)
         spacerItem16 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         self.gridLayout.addItem(spacerItem16, 1, 2, 1, 1)
+        spacerItem17 = QtWidgets.QSpacerItem(300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem17, 5, 3, 1, 1)
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         font = QtGui.QFont()
         font.setFamily("Segoe UI")
@@ -272,22 +261,10 @@ class Ui_MainWindow(object):
         self.label_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_3.setObjectName("label_3")
         self.gridLayout.addWidget(self.label_3, 2, 2, 1, 1)
-        spacerItem17 = QtWidgets.QSpacerItem(300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem17, 5, 0, 1, 2)
-        self.labelInfo = QtWidgets.QLabel(self.centralwidget)
-        self.labelInfo.setStyleSheet("QLabel{\n"
-"    background-color: rgba(255, 255, 255, 0);\n"
-"    color: rgb(255, 0, 0);\n"
-"    font: 12pt \"Segoe UI\";\n"
-"}")
-        self.labelInfo.setText("")
-        self.labelInfo.setAlignment(QtCore.Qt.AlignCenter)
-        self.labelInfo.setObjectName("labelInfo")
-        self.gridLayout.addWidget(self.labelInfo, 12, 2, 1, 1)
-        spacerItem18 = QtWidgets.QSpacerItem(20, 49, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
-        self.gridLayout.addItem(spacerItem18, 13, 2, 1, 1)
-        spacerItem19 = QtWidgets.QSpacerItem(300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout.addItem(spacerItem19, 5, 3, 1, 1)
+        spacerItem18 = QtWidgets.QSpacerItem(300, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem18, 5, 0, 1, 2)
+        spacerItem19 = QtWidgets.QSpacerItem(20, 49, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Preferred)
+        self.gridLayout.addItem(spacerItem19, 12, 2, 1, 1)
         self.horizontalLayout_18 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_18.setObjectName("horizontalLayout_18")
         spacerItem20 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
@@ -382,15 +359,14 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.label_17.setText(_translate("MainWindow", "Telefon:"))
-        self.createAccountButton_2.setText(_translate("MainWindow", "Hesap Oluştur"))
+        self.createAccountButton_2.setText(_translate("MainWindow", "Hasta Ekle"))
         self.label_2.setText(_translate("MainWindow", "Şifre:"))
+        self.label_17.setText(_translate("MainWindow", "Telefon:"))
         self.label.setText(_translate("MainWindow", "TC Kimlik No:"))
-        self.label_15.setText(_translate("MainWindow", "İsim:"))
+        self.label_15.setText(_translate("MainWindow", "Hasta Adı:"))
         self.label_19.setText(_translate("MainWindow", "Adres:"))
-        self.logInButton.setText(_translate("MainWindow", "Giriş Yap"))
         self.label_3.setText(_translate("MainWindow", "HFZ HASTANESİ\n"
 "Bilgi Yönetim Sistemi\n"
 "Kayıt Ol"))
         self.label_18.setText(_translate("MainWindow", "E-Mail:"))
-        self.label_16.setText(_translate("MainWindow", "Soyad:"))
+        self.label_16.setText(_translate("MainWindow", "Hasta Soyadı:"))
