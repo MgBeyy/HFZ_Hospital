@@ -1,16 +1,14 @@
 import pyodbc
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
+
 
 class DatabaseConnection:
     def __init__(self):
         self.conn = None
-        self.server = os.getenv('DB_SERVER')
-        self.database = os.getenv('DB_NAME')
-        self.username = os.getenv('DB_USER')
-        self.password = os.getenv('DB_PASSWORD')
+        self.server = "DESKTOP-OGPV872"
+        self.database = "HFZ_Hospital"
+
 
     def connect(self):
         try:
