@@ -1,17 +1,15 @@
 from PyQt5.QtWidgets import QMainWindow
 
-from UI import addPatient
+from UI import patientAppointment as pa
 
-
-class addPatientUi(QMainWindow):
+class patinetAppointmenUi(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.appUi = pa.Ui_MainWindow()
+        self.appUi.setupUi(self)
+        self.show()
 
-        self.apUi = addPatient.Ui_MainWindow()
-        self.apUi.setupUi(self)
-        self.setWindowTitle("HFZ Hastanesi")
-
-        self.database_connection = None
+        self.appUi.exitButton.clicked.connect(self.close)
 
     def set_database_connection(self, database_connection):
         self.database_connection = database_connection

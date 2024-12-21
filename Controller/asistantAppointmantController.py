@@ -11,7 +11,10 @@ class asistantAppointmantUi(QMainWindow):
         self.aaUi.setupUi(self)
         self.setWindowTitle("HFZ Hastanesi")
 
-        self.aaUi.exitButton.clicked.connect(self.exit)
+        self.database_connection = None
 
-    def exit(self):
-        self.close()
+        self.aaUi.exitButton.clicked.connect(self.close)
+
+    def set_database_connection(self, database_connection):
+        self.database_connection = database_connection
+        print("Database bağlantısı alındı")

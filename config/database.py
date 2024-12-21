@@ -6,7 +6,7 @@ import os
 class DatabaseConnection:
     def __init__(self):
         self.conn = None
-        self.server = "DESKTOP-OGPV872"
+        self.server = "DESKTOP-97VLS18"
         self.database = "HFZ_Hospital"
 
 

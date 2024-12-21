@@ -12,6 +12,9 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
+
+
+
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidget.setMaximumSize(QtCore.QSize(1500, 1000))
         self.tableWidget.setStyleSheet("""QTableWidget {
@@ -50,7 +53,7 @@ QHeaderView::section {
         self.tableWidget.setHorizontalHeaderItem(1, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(2, item)
-        self.verticalLayout_2.addWidget(self.tableWidget)
+
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.searchComboBox = QtWidgets.QComboBox(self.centralwidget)
@@ -191,6 +194,7 @@ QHeaderView::section {
         spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_2.addItem(spacerItem1)
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
+        self.verticalLayout_2.addWidget(self.tableWidget)
         self.horizontalLayout.addLayout(self.verticalLayout_2)
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setObjectName("verticalLayout")

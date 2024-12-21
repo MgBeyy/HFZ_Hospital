@@ -12,5 +12,9 @@ class prescriptionUi(QMainWindow):
 
         self.pUi.exitButton.clicked.connect(self.exit)
 
+    def set_database_connection(self, database_connection):
+        self.database_connection = database_connection
+        print("Database bağlantısı alındı")
+
     def exit(self):
         self.close()

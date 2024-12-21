@@ -25,8 +25,8 @@ class User:
 
             # Insert user
             sql = """
-                INSERT INTO Kullanici 
-                (TC, Ad, Soyad, DogumTarihi, Cinsiyet, Email, Telefon, Adres, Sifre, Rol)
+                INSERT INTO Users 
+                (TCNumber, Ad, Soyad, DogumTarihi, Cinsiyet, Email, Telefon, Adres, Sifre, Rol)
                 VALUES  (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """
             cursor.execute(sql, (tc_number, name, surname, birthday, gender,
@@ -51,7 +51,7 @@ class User:
         try:
             cursor = self.db.cursor()
             cursor.execute("""
-                SELECT ID, Sifre, Rol, Ad, Soyad
+                SELECT UserID, Sifre, Rol, Ad, Soyad
                 FROM Users WHERE Email = ?
             """, (email,))
             kullanici = cursor.fetchone()
@@ -63,10 +63,15 @@ class User:
                 return False, "Hatalı email veya şifre"
 
             return True, {
-                'user_id': kullanici.ID,
+                'user_id': kullanici.UserID,
                 'user_type': kullanici.Rol,
                 'name': f"{kullanici.Ad} {kullanici.Soyad}"
             }
         except Exception as e:
             print(f"Giriş hatası: {str(e)}")
             return False, str(e)
+
+    def verify_password(self, password, true_password):
+        if bcrypt.checkpw(password.encode('utf-8'), true_password.encode('utf-8')):
+            return True
+        return False
