@@ -32,11 +32,12 @@ class User:
                                  email, phone_number, address, password_hash, user_type))
 
             user_id = cursor.execute("SELECT @@IDENTITY").fetchval()
+            print(user_id)
 
             # If registering as patient, create patient record
-            if user_type == 'patient':
+            if user_type == 'P':
                 cursor.execute("""
-                    INSERT INTO Patient (PatientID, UserID)
+                    INSERT INTO Patient (UserID)
                     VALUES (?)
                 """, user_id)
 
