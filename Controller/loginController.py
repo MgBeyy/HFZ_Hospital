@@ -46,7 +46,7 @@ class loginUi(QMainWindow):
                 self.database_signal.connect(self.doctorUi.set_database_connection)
                 self.database_signal.emit(self.database_connection)
                 self.doctorUi.show()
-            elif self.user_type == 'H':
+            elif self.user_type == 'P':
                 self.close()
                 self.patientUi = patientController.PatientUi()
                 self.database_signal.connect(self.patientUi.set_database_connection)
@@ -59,7 +59,7 @@ class loginUi(QMainWindow):
                 self.database_signal.emit(self.database_connection)
                 self.asistantUi.show()
         else:
-            self.loginUi.labelInfo.setText(self.message)
+            self.loginUi.labelInfo.setText("Hesap Oluşturulamadı")
 
         # if self.tc_number == 'd':
         #     self.close()

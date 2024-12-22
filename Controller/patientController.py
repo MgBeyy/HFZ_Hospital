@@ -3,7 +3,6 @@ from PyQt5.QtWidgets import QMainWindow
 
 from UI import mainPatient as mp
 from Controller import loginController, patientAppointmentController
-from config import database
 
 
 class PatientUi(QMainWindow):

@@ -96,7 +96,7 @@ class CreateAccUi(QMainWindow):
 
             self.is_created, self.message = self.authentication.register_user(self.tc_number, self.name, self.surname,
                                                                               self.birthdate, self.gender, self.email,
-                                                                              self.adress, self.phone_number, self.password)
+                                                                              self.phone_number, self.adress, self.password)
             if self.is_created:
                 self.possitiveMessage("Hesap Başarıyla Oluşturuldu.")
             else:
