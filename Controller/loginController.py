@@ -2,8 +2,10 @@ from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtWidgets import QMainWindow
 
 from UI import login as l
-from Controller import doctorController, asisstantController, patientController, forgotPassController, createAccController
+from Controller import doctorController, asisstantController, patientController, forgotPassController, \
+    createAccController
 from Functions import Auth
+
 
 class loginUi(QMainWindow):
     database_signal = pyqtSignal(object)
