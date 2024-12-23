@@ -22,7 +22,6 @@ class Ui_MainWindow(object):
         self.gridLayout.setObjectName("gridLayout")
         self.verticalLayout_4 = QtWidgets.QVBoxLayout()
         self.verticalLayout_4.setObjectName("verticalLayout_4")
-
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_3.setObjectName("horizontalLayout_3")
         self.searchLineEdit = QtWidgets.QLineEdit(self.centralwidget)
@@ -33,17 +32,17 @@ class Ui_MainWindow(object):
         font.setPointSize(14)
         self.searchLineEdit.setFont(font)
         self.searchLineEdit.setStyleSheet("QLineEdit{\n"
-                                          "    background-color: rgb(255, 255, 255);\n"
-                                          "    border-radius: 15px;\n"
-                                          "    border: 3px solid;\n"
-                                          "    border-color: rgb(121, 177, 236);\n"
-                                          "    font: 14pt \"Segoe UI\";\n"
-                                          "}\n"
-                                          "QLineEdit::focus{\n"
-                                          "    border: 2px solid;\n"
-                                          "    border-color: rgb(44, 89, 209);\n"
-                                          "}\n"
-                                          "")
+"    background-color: rgb(255, 255, 255);\n"
+"    border-radius: 15px;\n"
+"    border: 3px solid;\n"
+"    border-color: rgb(121, 177, 236);\n"
+"    font: 14pt \"Segoe UI\";\n"
+"}\n"
+"QLineEdit::focus{\n"
+"    border: 2px solid;\n"
+"    border-color: rgb(44, 89, 209);\n"
+"}\n"
+"")
         self.searchLineEdit.setText("")
         self.searchLineEdit.setObjectName("searchLineEdit")
         self.horizontalLayout_3.addWidget(self.searchLineEdit)
@@ -58,23 +57,23 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.searchButton.setFont(font)
         self.searchButton.setStyleSheet("QPushButton{\n"
-                                        "    background-color: rgb(44, 89, 209);\n"
-                                        "    font: 75 16pt \"Segoe UI\";\n"
-                                        "    font-weight: bold;\n"
-                                        "    color: rgb(198, 205, 213);\n"
-                                        "    border-radius: 15px;\n"
-                                        "}\n"
-                                        "QPushButton::hover{\n"
-                                        "    background-color: rgb(198, 205, 213);\n"
-                                        "    color: rgb(44, 89, 209);\n"
-                                        "}\n"
-                                        "QPushButton::pressed{\n"
-                                        "    background-color: rgb(198, 205, 213);\n"
-                                        "    color: rgb(44, 89, 209);\n"
-                                        "    padding-top: 3px;\n"
-                                        "    border: 2px solid;\n"
-                                        "    border-color: rgb(13, 17, 23);\n"
-                                        "}")
+"    background-color: rgb(44, 89, 209);\n"
+"    font: 75 16pt \"Segoe UI\";\n"
+"    font-weight: bold;\n"
+"    color: rgb(198, 205, 213);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"QPushButton::hover{\n"
+"    background-color: rgb(198, 205, 213);\n"
+"    color: rgb(44, 89, 209);\n"
+"}\n"
+"QPushButton::pressed{\n"
+"    background-color: rgb(198, 205, 213);\n"
+"    color: rgb(44, 89, 209);\n"
+"    padding-top: 3px;\n"
+"    border: 2px solid;\n"
+"    border-color: rgb(13, 17, 23);\n"
+"}")
         self.searchButton.setObjectName("searchButton")
         self.horizontalLayout_3.addWidget(self.searchButton)
         spacerItem = QtWidgets.QSpacerItem(10, 20, QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
@@ -85,14 +84,13 @@ class Ui_MainWindow(object):
         font.setPointSize(12)
         self.searchWarning.setFont(font)
         self.searchWarning.setStyleSheet("font: 12pt \"Segoe UI\";\n"
-                                         "color: red;")
+"color: red;")
         self.searchWarning.setText("")
         self.searchWarning.setObjectName("searchWarning")
         self.horizontalLayout_3.addWidget(self.searchWarning)
         spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.horizontalLayout_3.addItem(spacerItem1)
         self.verticalLayout_4.addLayout(self.horizontalLayout_3)
-
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
         self.tableWidget.setMaximumSize(QtCore.QSize(1500, 1000))
         self.tableWidget.setStyleSheet("QTableWidget {\n"
@@ -134,7 +132,6 @@ class Ui_MainWindow(object):
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(3, item)
         self.verticalLayout_4.addWidget(self.tableWidget)
-
         self.gridLayout.addLayout(self.verticalLayout_4, 0, 0, 1, 1)
         self.verticalLayout_2 = QtWidgets.QVBoxLayout()
         self.verticalLayout_2.setObjectName("verticalLayout_2")
@@ -247,8 +244,32 @@ class Ui_MainWindow(object):
 "}")
         self.prescriptionButton.setObjectName("prescriptionButton")
         self.verticalLayout_2.addWidget(self.prescriptionButton)
-        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        spacerItem3 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         self.verticalLayout_2.addItem(spacerItem3)
+        self.addMedicineButton = QtWidgets.QPushButton(self.centralwidget)
+        self.addMedicineButton.setMinimumSize(QtCore.QSize(0, 40))
+        self.addMedicineButton.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(44, 89, 209);\n"
+"    font: 75 16pt \"Segoe UI\";\n"
+"    font-weight: bold;\n"
+"    color: rgb(198, 205, 213);\n"
+"    border-radius: 15px;\n"
+"}\n"
+"QPushButton::hover{\n"
+"    background-color: rgb(198, 205, 213);\n"
+"    color: rgb(44, 89, 209);\n"
+"}\n"
+"QPushButton::pressed{\n"
+"    background-color: rgb(198, 205, 213);\n"
+"    color: rgb(44, 89, 209);\n"
+"    padding-top: 3px;\n"
+"    border: 2px solid;\n"
+"    border-color: rgb(13, 17, 23);\n"
+"}")
+        self.addMedicineButton.setObjectName("addMedicineButton")
+        self.verticalLayout_2.addWidget(self.addMedicineButton)
+        spacerItem4 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem4)
         self.exitButton = QtWidgets.QPushButton(self.centralwidget)
         self.exitButton.setMinimumSize(QtCore.QSize(0, 50))
         self.exitButton.setStyleSheet("QPushButton{\n"
@@ -280,6 +301,8 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.searchLineEdit.setPlaceholderText(_translate("MainWindow", "Ara"))
+        self.searchButton.setText(_translate("MainWindow", "ARA"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "ID"))
         item = self.tableWidget.horizontalHeaderItem(1)
@@ -288,11 +311,10 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "Üretici"))
         item = self.tableWidget.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "Türü"))
-        self.searchLineEdit.setPlaceholderText(_translate("MainWindow", "Ara"))
-        self.searchButton.setText(_translate("MainWindow", "ARA"))
         self.label_2.setText(_translate("MainWindow", "Hasta Seç:"))
         self.patinetComboBox.setItemText(0, _translate("MainWindow", "New Item"))
         self.patinetComboBox.setItemText(1, _translate("MainWindow", "New Item"))
         self.patinetComboBox.setItemText(2, _translate("MainWindow", "New Item"))
         self.prescriptionButton.setText(_translate("MainWindow", "Reçete Yaz"))
+        self.addMedicineButton.setText(_translate("MainWindow", "İlaç Ekle"))
         self.exitButton.setText(_translate("MainWindow", "Çıkış"))
