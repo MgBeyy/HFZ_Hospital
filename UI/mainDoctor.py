@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from Controller import doctorController
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -40,8 +40,8 @@ QHeaderView::section {
 		 border-bottom: 2px solid rgb(44, 89, 209);
     }""")
         self.tableWidget.setObjectName("tableWidget")
-        self.tableWidget.setColumnCount(3)
-        self.tableWidget.setRowCount(1)
+        self.tableWidget.setColumnCount(5)
+        self.tableWidget.setRowCount(4)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget.setVerticalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
@@ -333,14 +333,14 @@ QHeaderView::section {
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        item = self.tableWidget.verticalHeaderItem(0)
+        """item = self.tableWidget.verticalHeaderItem(0)
         item.setText(_translate("MainWindow", "New Row"))
         item = self.tableWidget.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "New Column"))
         item = self.tableWidget.horizontalHeaderItem(1)
         item.setText(_translate("MainWindow", "New Column"))
         item = self.tableWidget.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow", "New Column"))
+        item.setText(_translate("MainWindow", "New Column"))"""
         self.searchComboBox.setItemText(0, _translate("MainWindow", "New Item"))
         self.searchComboBox.setItemText(1, _translate("MainWindow", "New Item"))
         self.searchLineEdit.setPlaceholderText(_translate("MainWindow", "Ara"))
