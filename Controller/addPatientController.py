@@ -74,7 +74,7 @@ class addPatientUi(QMainWindow):
         if not self.deficient:
             self.authentication = Auth.User(self.database_connection)
 
-            self.gender = ("E" if self.Ui.genderComboBox.currentText() == "Erkek" else "K")
+            self.gender = ("E" if self.apUi.genderComboBox.currentText() == "Erkek" else "K")
 
             print("Tc No:", self.tc_number)
             print("Ad:", self.name)
@@ -108,4 +108,4 @@ class addPatientUi(QMainWindow):
                                          color: rgb(0, 255, 0);
                                          font: 12pt \Segoe UI\;
                                      }""")
-        self.Ui.infoLabel.setText(message)
+        self.apUi.infoLabel.setText(message)
