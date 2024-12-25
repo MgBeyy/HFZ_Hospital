@@ -75,27 +75,7 @@ class loginUi(QMainWindow):
                 self.database_signal.emit(self.database_connection)
                 self.asistantUi.show()
         else:
-            self.loginUi.labelInfo.setText("Hesap Oluşturulamadı")
-
-        # if self.tc_number == 'd':
-        #     self.close()
-        #     self.doctorUi = doctorController.DoctorUi()
-        #     self.doctorUi.show()
-        #
-        # elif self.tc_number == 'p':
-        #     self.close()
-        #     self.patientUi = patientController.PatientUi()
-        #     self.patientUi.show()
-        #
-        # elif self.tc_number == 'a':
-        #     self.close()
-        #     self.asistantUi = asisstantController.AsistantUi()
-        #     self.asistantUi.show()
-        #
-        # else:
-        #     self.loginUi.labelInfo.setText("Hatalı Giriş!")
-        #     print("Hatalı Giriş.")
-        #     return
+            self.loginUi.labelInfo.setText("Hatalı TC veya Şifre")
 
     def forgotPass(self):
         self.close()
