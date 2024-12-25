@@ -63,6 +63,10 @@ class loginUi(QMainWindow):
                 self.database_signal.emit(self.database_connection)
                 self.doctorUi.show()
             elif self.user_type == 'P':
+                cursor = self.database_connection.cursor()
+                cursor.execute("SELECT PatientID FROM Patient WHERE UserID = ?", (self.user_id,))
+                Globals.patient_id = cursor.fetchone()[0]
+
                 self.close()
                 self.patientUi = patientController.PatientUi()
                 self.database_signal.connect(self.patientUi.set_database_connection)
@@ -77,25 +81,6 @@ class loginUi(QMainWindow):
         else:
             self.loginUi.labelInfo.setText("Hesap Oluşturulamadı")
 
-        # if self.tc_number == 'd':
-        #     self.close()
-        #     self.doctorUi = doctorController.DoctorUi()
-        #     self.doctorUi.show()
-        #
-        # elif self.tc_number == 'p':
-        #     self.close()
-        #     self.patientUi = patientController.PatientUi()
-        #     self.patientUi.show()
-        #
-        # elif self.tc_number == 'a':
-        #     self.close()
-        #     self.asistantUi = asisstantController.AsistantUi()
-        #     self.asistantUi.show()
-        #
-        # else:
-        #     self.loginUi.labelInfo.setText("Hatalı Giriş!")
-        #     print("Hatalı Giriş.")
-        #     return
 
     def forgotPass(self):
         self.close()

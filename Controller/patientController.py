@@ -3,14 +3,13 @@ from PyQt5.QtWidgets import QMainWindow, QTableWidgetItem
 
 from UI import mainPatient as mp
 from Controller import loginController, patientAppointmentController
-
+import Globals
 
 class PatientUi(QMainWindow):
     database_signal = pyqtSignal(object)
 
     def __init__(self):
         super().__init__()
-
         self.patientUi = mp.Ui_MainWindow()
         self.patientUi.setupUi(self)
         self.setWindowTitle("HFZ Hastanesi Hasta Paneli")
@@ -92,10 +91,12 @@ class PatientUi(QMainWindow):
             INNER JOIN 
                 Users ON Patient.UserID = Users.UserID
             INNER JOIN 
-                Department ON Appointment.DepartmentID = Department.DepartmentID;
+                Department ON Appointment.DepartmentID = Department.DepartmentID
+            WHERE
+                Patient.PatientID = ?;
             """
 
-            self.cursor.execute(sql)
+            self.cursor.execute(sql,(Globals.patient_id,))
             rows = self.cursor.fetchall()
 
             for row_index, row in enumerate(rows):
@@ -130,7 +131,7 @@ class PatientUi(QMainWindow):
                 self.patientUi.tableWidget.setColumnWidth(i, width)
 
             sql = """
-            SELECT 
+            SELECT
                 p.PrescriptionID,
                 p.DateTime,
                 u.Name,
@@ -140,10 +141,12 @@ class PatientUi(QMainWindow):
             JOIN 
                 Doctor d ON p.DoctorID = d.DoctorID
             JOIN 
-                Users u ON d.UserID = u.UserID;
+                Users u ON d.UserID = u.UserID
+            WHERE
+				p.PatientID = ?
             """
 
-            self.cursor.execute(sql, (self.patient_id,))
+            self.cursor.execute(sql, (Globals.patient_id,))
             rows = self.cursor.fetchall()
 
             for row_index, row in enumerate(rows):
