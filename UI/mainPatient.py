@@ -406,7 +406,5 @@ QHeaderView::section {
         self.prescriptionButton.setText(_translate("MainWindow", "Reçetelerim"))
         self.label_2.setText(_translate("MainWindow", "Randevu Alma"))
         self.label.setText(_translate("MainWindow", "Bölüm Seç:"))
-        self.departmantComboBox.setItemText(0, _translate("MainWindow", "New Item"))
-        self.departmantComboBox.setItemText(1, _translate("MainWindow", "New Item"))
         self.getAppointmentButton.setText(_translate("MainWindow", "Randevu Al"))
         self.logOutButton.setText(_translate("MainWindow", "Çıkış"))

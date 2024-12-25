@@ -12,7 +12,7 @@ class AsistantUi(QMainWindow):
 
         self.asistantUi = ma.Ui_MainWindow()
         self.asistantUi.setupUi(self)
-        self.setWindowTitle("HFZ Hastanesi")
+        self.setWindowTitle("HFZ Hastanesi Asistan Ekranı")
 
         self.database_connection = None
         self.table = None
