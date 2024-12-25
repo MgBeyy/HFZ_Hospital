@@ -138,7 +138,7 @@ class prescriptionUi(QMainWindow):
                 VALUES (?, ?, ?, ?);
             """, (doctor_id, patient_id, datetime.now(), appointment_id))
 
-            cursor.execute("SELECT SCOPE_IDENTITY() AS PrescriptionID;")
+            cursor.execute("SELECT Max(PrescriptionID) FROM Prescription;")
             result = cursor.fetchone()
 
             if not result or not result[0]:
