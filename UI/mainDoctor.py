@@ -273,8 +273,6 @@ QHeaderView::section {
 "    border-color: rgb(44, 89, 209);\n"
 "}")
         self.tableComboBox.setObjectName("tableComboBox")
-        self.tableComboBox.addItem("")
-        self.tableComboBox.addItem("")
         self.verticalLayout.addWidget(self.tableComboBox)
         spacerItem2 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         self.verticalLayout.addItem(spacerItem2)
@@ -340,13 +338,13 @@ QHeaderView::section {
         item = self.tableWidget.horizontalHeaderItem(1)
         item.setText(_translate("MainWindow", "New Column"))
         item = self.tableWidget.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow", "New Column"))"""
+        item.setText(_translate("MainWindow", "New Column"))
         self.searchComboBox.setItemText(0, _translate("MainWindow", "New Item"))
-        self.searchComboBox.setItemText(1, _translate("MainWindow", "New Item"))
+        self.searchComboBox.setItemText(1, _translate("MainWindow", "New Item"))"""
         self.searchLineEdit.setPlaceholderText(_translate("MainWindow", "Ara"))
         self.searchButton.setText(_translate("MainWindow", "ARA"))
         self.label.setText(_translate("MainWindow", "Tablo Seç:"))
-        self.tableComboBox.setItemText(0, _translate("MainWindow", "New Item"))
-        self.tableComboBox.setItemText(1, _translate("MainWindow", "New Item"))
+        """self.tableComboBox.setItemText(0, _translate("MainWindow", "New Item"))
+        self.tableComboBox.setItemText(1, _translate("MainWindow", "New Item"))"""
         self.prescriptionButton.setText(_translate("MainWindow", "Reçete Yaz"))
         self.logOutButton.setText(_translate("MainWindow", "Çıkış"))

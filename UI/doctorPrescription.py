@@ -312,9 +312,9 @@ class Ui_MainWindow(object):
         item = self.tableWidget.horizontalHeaderItem(3)
         item.setText(_translate("MainWindow", "Türü"))
         self.label_2.setText(_translate("MainWindow", "Hasta Seç:"))
-        self.patinetComboBox.setItemText(0, _translate("MainWindow", "New Item"))
+        """self.patinetComboBox.setItemText(0, _translate("MainWindow", "New Item"))
         self.patinetComboBox.setItemText(1, _translate("MainWindow", "New Item"))
-        self.patinetComboBox.setItemText(2, _translate("MainWindow", "New Item"))
+        self.patinetComboBox.setItemText(2, _translate("MainWindow", "New Item"))"""
         self.prescriptionButton.setText(_translate("MainWindow", "Reçete Yaz"))
         self.addMedicineButton.setText(_translate("MainWindow", "İlaç Ekle"))
         self.exitButton.setText(_translate("MainWindow", "Çıkış"))
