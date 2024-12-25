@@ -79,7 +79,7 @@ class loginUi(QMainWindow):
                 self.database_signal.emit(self.database_connection)
                 self.asistantUi.show()
         else:
-            self.loginUi.labelInfo.setText("Hesap Oluşturulamadı")
+            self.loginUi.labelInfo.setText("TC veya Şifre Hatalı")
 
 
     def forgotPass(self):
